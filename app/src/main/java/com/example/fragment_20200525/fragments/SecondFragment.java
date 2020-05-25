@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import com.example.fragment_20200525.R;
 import com.example.fragment_20200525.databinding.FragmentSecondBinding;
 
-public class SecondFragment extends Fragment {
+public class SecondFragment extends BaseFragment {
     FragmentSecondBinding binding;
 
     @Nullable
@@ -33,5 +33,15 @@ public class SecondFragment extends Fragment {
                 Toast.makeText(getActivity(), "두 번째 Fragment 입니다.", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void setupEvents() {
+
+    }
+
+    @Override
+    public void setValues() {
+
     }
 }

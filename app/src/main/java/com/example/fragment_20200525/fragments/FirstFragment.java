@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.example.fragment_20200525.R;
 import com.example.fragment_20200525.databinding.FragmentFirstBinding;
 
-public class FirstFragment extends Fragment {
+public class FirstFragment extends BaseFragment {
     FragmentFirstBinding binding;
     @Nullable
     @Override
@@ -33,5 +33,15 @@ public class FirstFragment extends Fragment {
                 binding.myTxt.setText(input);
             }
         });
+    }
+
+    @Override
+    public void setupEvents() {
+
+    }
+
+    @Override
+    public void setValues() {
+
     }
 }
